@@ -5,7 +5,12 @@ var gameOver = false;
 
 $("input").change(function() {
     winCount = Number($("input").val());
-    $("#maxScore").text(winCount);
+    if (winCount !== 0) {
+        $("#maxScore").text(winCount);
+    } else {
+        $("#maxScore").text(5);
+    }
+    
 });
 
 $("#pOneBtn").click(function() {
@@ -50,7 +55,10 @@ $("#pTwoBtn").click(function() {
 $("#reset").click(function() {
     pOneScore = 0;
     pTwoScore = 0;
+    winCount = 5;
     gameOver = false;
+    $("input").val(5);
+    $("#maxScore").text("5");
     $("#pOneScore,#pTwoScore").removeClass("win");
     $("#pOneScore,#pTwoScore").text("0"); 
     $("#pOneBtn,#pTwoBtn").removeAttr("style");
