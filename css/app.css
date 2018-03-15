@@ -1,0 +1,81 @@
+
+/* @author: Abhishek Baghel 
+   Date: 03/15/2018
+   Player Score Keeper - CSS File (app.css)
+   jQuery Version - 3.3.1
+*/
+
+.win {
+    color: forestgreen;
+}
+
+#pOneBtn {
+    background: rgb(230, 50, 110);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+#pTwoBtn {
+    background: green;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+input {
+    width: 30%;
+}
+
+#reset {
+    background: purple;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.container {
+    width: 960px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.won {
+    color: white;
+    background: blue;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    #pOneBtn,#pTwoBtn,#reset {
+        width: 100%;
+        margin: 10px 5px;
+    }
+    input {
+        width: 100%;
+    }
+
+    .container {
+        width: 320px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
