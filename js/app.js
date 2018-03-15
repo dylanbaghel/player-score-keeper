@@ -16,7 +16,7 @@ $("input").change(function() {
 $("#pOneBtn").click(function() {
     if (!gameOver) {
         pOneScore++;
-        if (pOneScore === winCount) {
+        if (pOneScore >= winCount) {
             gameOver = true;
             $("#pOneScore").addClass("win");
             $("#pOneBtn").css({
@@ -35,7 +35,7 @@ $("#pOneBtn").click(function() {
 $("#pTwoBtn").click(function() {
     if (!gameOver) {
         pTwoScore++;
-        if (pTwoScore === winCount) {
+        if (pTwoScore >= winCount) {
             gameOver = true;
             $("#pTwoScore").addClass("win");
             $("#pTwoBtn").css({
